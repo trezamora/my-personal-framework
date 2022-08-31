@@ -6,12 +6,15 @@
 // VARIABLES
 $color-text-body: rgba(0, 0, 0, .8);
 $color-text-headings: rgba(0, 0, 0, 1);
-$color-accent: rgba(84, 148, 157, 1);
-$color-light-accent: rgba(119, 181, 190, 1);
-$color-dark-accent: rgba(71, 108, 114, 1);
+$color-accent: rgba(234, 194, 222, 1);
+$color-link: rgba(221, 157, 202, 1);
+$color-link-darker: rgba(203, 169, 193, 1);
+$color-light-accent: rgba(122, 203, 157, 1);
+$color-dark-accent: rgba(90, 132, 108, 1);
 
-$font-family-sans: 'Reem Kufi', sans-serif;
-$font-family-serif: 'Yeseva One', serif;
+
+$font-family-sans: 'forma-djr-micro', Helvetica, Arial, sans-serif;
+$font-family-serif: 'utopia-std', serif;
 
 // BREAKPOINTS
 $breakpoint-small: 768px;
@@ -26,3 +29,4 @@ $breakpoint-large: 1250px;
 @import "partials/layout";
 @import "partials/grid";
 @import "partials/structure";
+@import "partials/helpers";

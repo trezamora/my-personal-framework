@@ -39,13 +39,15 @@ h3 {
 
 /* BASE TEXT FONTS */
 body {
-  font-family: "Reem Kufi", sans-serif;
+  font-family: "forma-djr-micro", Helvetica, Arial, sans-serif;
+  font-weight: 400;
+  font-style: normal;
 }
 
 h1,
 h2,
 h3 {
-  font-family: "Yeseva One", serif;
+  font-family: "utopia-std", serif;
 }
 
 /* BASE TYPOGRAPHY */
@@ -59,6 +61,16 @@ h2,
 h3,
 p {
   margin: 0 0 0.5em 0;
+}
+
+/* SECTION HEADING */
+.section-heading {
+  font-size: 1rem;
+  font-family: "forma-djr-micro", Helvetica, Arial, sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  padding: 0 0 0.5em 0;
+  margin: 3em auto 3em auto;
 }
 
 /* TYPOGRAPHIC SCALE */
@@ -82,6 +94,14 @@ p {
   max-width: 40em;
 }
 
+/* LINKS */
+a {
+  color: rgb(221, 157, 202);
+}
+a:hover {
+  color: rgb(203, 169, 193);
+}
+
 /* HORIZONTAL LINE */
 hr {
   border: 0;
@@ -96,29 +116,31 @@ hr {
   font-weight: normal;
   line-height: 1;
   margin: 0;
-  color: rgb(84, 148, 157);
+  color: rgb(234, 194, 222);
 }
 
 .subheadline {
   font-weight: normal;
   font-size: 2.5rem;
   margin: 0.25em 0;
-  color: rgb(119, 181, 190);
+  color: rgb(122, 203, 157);
 }
 
 /* BUTTONS */
 .button,
 button {
   display: inline-block;
-  background-color: rgb(84, 148, 157);
+  background-color: rgb(221, 157, 202);
   color: white;
   text-decoration: none;
   padding: 1em;
   border-radius: 0.5em;
+  margin: 1em 0.5em 1em 0;
 }
 .button:hover,
 button:hover {
-  background-color: rgb(71, 108, 114);
+  color: white;
+  background-color: rgb(203, 169, 193);
   border-radius: 1em;
   -webkit-transition: ease-in 250ms;
   transition: ease-in 250ms;
@@ -250,7 +272,8 @@ body {
 
 /* SITE STRUCTURE */
 .site-header {
-  background: rgb(71, 108, 114);
+  position: absolute;
+  width: 100%;
   padding: 1em;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -271,9 +294,22 @@ body {
   margin-bottom: 0;
 }
 
+.logo {
+  max-width: 50px;
+}
+
+.site-id {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
 /* SITE FOOTER */
 .site-footer {
-  background: rgb(71, 108, 114);
+  background: rgb(90, 132, 108);
   padding: 1em;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -305,29 +341,36 @@ body {
 /* SECTION */
 section {
   padding: 4em 0;
-}
-
-/* SECTION HEADING */
-.section-heading {
-  font-size: 1rem;
-  font-family: "Reem Kufi", sans-serif;
-  text-transform: uppercase;
-  letter-spacing: 0.05em;
-  border-bottom: 3px solid rgb(84, 148, 157);
-  display: table;
-  padding: 0 0 0.5em 0;
-  margin: 1em auto 3em auto;
+  min-height: 100vh;
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 /* HERO SECTION */
 .hero {
   padding: 6em 0;
-  background: rgb(119, 181, 190);
+  color: white;
+  background: rgb(90, 132, 108);
   text-align: center;
+  min-height: 100vh;
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
 }
 .hero h1 {
   margin-bottom: 0.25em;
+  color: white;
 }
 .hero p {
   margin: 1em auto;
+}
+
+/* TO HIDE SOMETHING VISUALLY */
+.hide-visually {
+  position: absolute;
+  top: -9999px;
+  left: -9999px;
 }
