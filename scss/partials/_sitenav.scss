@@ -41,6 +41,7 @@
         justify-content: center;
         transform: translate(0, 100%);
         transition: all 350ms ease-out;
+        z-index: 1;
     }
 
     li {
